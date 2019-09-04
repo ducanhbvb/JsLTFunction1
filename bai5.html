@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chomsao</title>
+</head>
+<body>
+Nhap ten ngoi sao
+<button type="button" onclick="Check(prompt())">Click Me!</button>
+<script>
+    let arryStar = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let arryConstellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+    function Check(a) {
+        let ss = true;
+        let check = parseFloat(a);
+        for (let i = 0; i < arryStar.length; i++) {
+            if (a === arryStar[i]) {
+                document.write(a + "in the constellation " + arryConstellation[i]);
+                ss = false;
+                break;
+            }
+        }
+        if (ss) {
+            document.write("There are no stars like this");
+        }
+    }
+</script>
+</body>
+</html>

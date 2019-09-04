@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<input type="button"onclick="bai2(prompt(),prompt())"value="Click Me!">
+<p id="result"></p>
+<script>
+    function bai2(numBer1,numBer2) {
+        let doiSo1 = parseInt(numBer1);
+        let doiSo2 = parseInt(numBer2);
+        if (doiSo1 > doiSo2) {
+            document.getElementById("result").innerHTML = "number one bigger num ber two";
+        }
+        else {
+            document.getElementById("result").innerHTML = doiSo1 + doiSo2;
+        }
+    }
+</script>
+</body>
+</html>
